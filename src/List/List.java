@@ -1,9 +1,11 @@
+package List;
+
 import java.util.*;
 
 class List {
     public static void main(String[] args) {
 
-//        *List<Double> notas = new ArrayList<Double>();
+//        *List.List<Double> notas = new ArrayList<Double>();
 
         System.out.println("Crie uma lista e adicione 7 notas");
 

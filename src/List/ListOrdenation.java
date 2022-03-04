@@ -1,4 +1,5 @@
-import javax.swing.*;
+package List;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -34,19 +35,19 @@ public class ListOrdenation {
 
         //Printando na ordem idade(tem q sobrescrever o metodo comparable na classe gato e criar uma classe comparator)
         System.out.println("Printando na ordem da idade:");
-        //Collections.sort(meusGatos, new ComparatorIdade());
+        //Collections.sort(meusGatos, new List.ComparatorIdade());
         meusGatos.sort(new ComparatorIdade());
         System.out.println(meusGatos);
 
         //Printando na ordem cor
         System.out.println("Printando na ordem da cor:");
-        //Collections.sort(meusGatos, new ComparatorCor());
+        //Collections.sort(meusGatos, new List.ComparatorCor());
         meusGatos.sort(new ComparatorCor());
         System.out.println(meusGatos);
 
         //Printando na ordem Nome/Cor/Idade
         System.out.println("Printando na ordem de preferencia -> Cor, Nome e Idade");
-        //Collections.sort(meusGatos, new ComparatorNomeCorIdade());
+        //Collections.sort(meusGatos, new List.ComparatorNomeCorIdade());
         meusGatos.sort(new ComparatorNomeCorIdade());
         System.out.println(meusGatos);
 
