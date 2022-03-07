@@ -1,4 +1,4 @@
-package TemperaturaMedia;
+package List;
 
 import java.time.Month;
 import java.util.ArrayList;

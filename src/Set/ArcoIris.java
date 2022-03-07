@@ -1,4 +1,4 @@
-package ArcoIris;
+package Set;
 
 import java.util.*;
 
