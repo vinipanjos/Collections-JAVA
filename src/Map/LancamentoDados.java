@@ -1,14 +1,13 @@
 package Map;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Random;
 
 public class LancamentoDados {
     public static void main(String[] args) {
         Random random = new Random();
-        Integer contador = 0;
-        Integer numeroDados = 0;
+        int contador = 0;
+        int numeroDados;
         HashMap<Integer, Integer> lancamentoDados = new HashMap<>();
 
         //Lançando os dados
@@ -20,16 +19,15 @@ public class LancamentoDados {
         System.out.println(lancamentoDados);
 
         //Verificando quantas vezes cada numero foi lançado
-        Integer validador = 0;
-        Integer um = 0;
-        Integer dois = 0;
-        Integer tres = 0;
-        Integer quatro = 0;
-        Integer cinco = 0;
-        Integer seis = 0;
-        Iterator<Integer> iterator = lancamentoDados.values().iterator();
-        while (iterator.hasNext()) {
-            validador = iterator.next();
+        Integer validador;
+        int um = 0;
+        int dois = 0;
+        int tres = 0;
+        int quatro = 0;
+        int cinco = 0;
+        int seis = 0;
+        for (Integer integer : lancamentoDados.values()) {
+            validador = integer;
             if (validador == 6) {
                 ++seis;
             } else if (validador == 5) {
